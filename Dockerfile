@@ -21,4 +21,4 @@ COPY . .
 RUN uv lock
 RUN uv sync --locked
 RUN chmod +x start.sh
-CMD ["bash", "start.sh"]
+ENTRYPOINT ["bash", "start.sh"]
